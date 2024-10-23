@@ -1,0 +1,44 @@
+#container {
+    border: 1px solid rgb(202, 202, 36);
+    margin: 20px auto;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+#field {
+    margin: 10px;
+    border: 1px solid rgb(202, 36, 36);
+    border-radius: 5px;
+    background-image: url('/public/ไม้.jpg');
+    background-size: 100%;
+    background-position: center;
+    width: 760px;
+    height: 300px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#ball {
+    border: 1px solid rgb(202, 36, 172);
+    border-radius: 50%;
+    position: relative;
+    background-size: cover;
+    background-color: rgb(236, 150, 70);
+    transform: rotate(0deg);
+    transition: transform 0.1s linear;
+}
+
+#ball.spin {
+    animation: spin 1s infinite linear; /* การหมุนแบบต่อเนื่อง */
+}
+
+#contrtol {
+    margin: 10px;
+}

@@ -1,0 +1,11 @@
+.home-title{
+  color: rgb(243, 158, 158);
+  border: solid;
+  border-radius: 50px;
+  width: 100px;
+  margin: 0 auto;
+}
+img{
+  width: 200px;
+  border-radius: 50px;
+}

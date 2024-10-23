@@ -1,0 +1,44 @@
+.temperatures-container {
+    border: 1px solid;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* จัดให้ข้อความอยู่กลาง */
+    text-align: center; /* จัดให้ข้อความใน div อยู่กลาง */
+    background-color: lightgray;
+}
+
+.temperature-title {
+    color: rgb(54, 55, 73);
+}
+
+.temperature-display {
+    display: flex;
+    justify-content: center; /* จัดให้ป้ายอยู่ตรงกลาง */
+    margin-bottom: 20px; /* ระยะห่างจากแถว input */
+}
+
+.temperatures-variables {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.temperature-row {
+    display: flex;
+    flex-direction: column; /* จัดให้ข้อความอยู่ในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่กลางในแนวนอน */
+    justify-content: flex-start; /* จัดให้เริ่มต้นที่ด้านบน */
+    margin-bottom: 10px; /* ระยะห่างระหว่างแถว */
+    gap: 5px; /* ช่องว่างระหว่างป้ายและกล่อง input */
+  }
+  
+  .temperature-display .badge {
+    display: inline-flex; /* ใช้ inline-flex เพื่อให้จัดตำแหน่ง */
+    align-items: center; /* จัดให้อยู่กลางในแนวตั้ง */
+    justify-content: center; /* จัดให้อยู่กลางในแนวนอน */
+    padding: 0.5rem; /* เพิ่ม padding สำหรับความสวยงาม */
+  }
+  
